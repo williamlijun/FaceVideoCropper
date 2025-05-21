@@ -1,0 +1,2 @@
+Train dataset size: 2480
+Validation dataset size: 620

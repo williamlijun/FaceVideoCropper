@@ -1,0 +1,66 @@
+使用设备: cuda
+训练集大小: 248
+验证集大小: 62
+Epoch [1/20], Average Train Loss: 1.9841, Train Acc: 19.76%
+Epoch [1/20], Validation Loss: 2.0371, Validation Acc: 14.52%
+
+Epoch [2/20], Average Train Loss: 1.4471, Train Acc: 52.02%
+Epoch [2/20], Validation Loss: 1.9602, Validation Acc: 16.13%
+
+Epoch [3/20], Average Train Loss: 0.9042, Train Acc: 75.81%
+Epoch [3/20], Validation Loss: 2.1639, Validation Acc: 24.19%
+
+Epoch [4/20], Average Train Loss: 0.4550, Train Acc: 91.13%
+Epoch [4/20], Validation Loss: 2.0835, Validation Acc: 29.03%
+
+Epoch [5/20], Average Train Loss: 0.2121, Train Acc: 95.97%
+Epoch [5/20], Validation Loss: 3.0881, Validation Acc: 19.35%
+
+Epoch [6/20], Average Train Loss: 0.0779, Train Acc: 100.00%
+Epoch [6/20], Validation Loss: 2.7498, Validation Acc: 33.87%
+
+Epoch [7/20], Average Train Loss: 0.0616, Train Acc: 98.79%
+Epoch [7/20], Validation Loss: 2.7393, Validation Acc: 22.58%
+
+Epoch [8/20], Average Train Loss: 0.0900, Train Acc: 97.18%
+Epoch [8/20], Validation Loss: 2.5129, Validation Acc: 29.03%
+
+Epoch [9/20], Average Train Loss: 0.0913, Train Acc: 96.77%
+Epoch [9/20], Validation Loss: 3.9645, Validation Acc: 25.81%
+
+Epoch [10/20], Average Train Loss: 0.0808, Train Acc: 97.58%
+Epoch [10/20], Validation Loss: 4.8034, Validation Acc: 27.42%
+
+Epoch [11/20], Average Train Loss: 0.1163, Train Acc: 95.97%
+Epoch [11/20], Validation Loss: 4.8286, Validation Acc: 22.58%
+
+Epoch [12/20], Average Train Loss: 0.1280, Train Acc: 94.76%
+Epoch [12/20], Validation Loss: 5.1260, Validation Acc: 33.87%
+
+Epoch [13/20], Average Train Loss: 0.1532, Train Acc: 93.55%
+Epoch [13/20], Validation Loss: 5.0141, Validation Acc: 25.81%
+
+Epoch [14/20], Average Train Loss: 0.0689, Train Acc: 97.98%
+Epoch [14/20], Validation Loss: 4.5680, Validation Acc: 22.58%
+
+Epoch [15/20], Average Train Loss: 0.0504, Train Acc: 98.79%
+Epoch [15/20], Validation Loss: 4.3341, Validation Acc: 22.58%
+
+Epoch [16/20], Average Train Loss: 0.0313, Train Acc: 99.19%
+Epoch [16/20], Validation Loss: 4.2013, Validation Acc: 22.58%
+
+Epoch [17/20], Average Train Loss: 0.0240, Train Acc: 99.60%
+Epoch [17/20], Validation Loss: 4.1006, Validation Acc: 20.97%
+
+Epoch [18/20], Average Train Loss: 0.0216, Train Acc: 100.00%
+Epoch [18/20], Validation Loss: 4.0334, Validation Acc: 22.58%
+
+Epoch [19/20], Average Train Loss: 0.0212, Train Acc: 99.60%
+Epoch [19/20], Validation Loss: 3.8965, Validation Acc: 24.19%
+
+Epoch [20/20], Average Train Loss: 0.0184, Train Acc: 100.00%
+Epoch [20/20], Validation Loss: 3.6944, Validation Acc: 24.19%
+
+训练总耗时: 102.50 秒 (1.71 分钟)
+模型保存在: ./log/train_20250519_142521/image_only_model_train_20250519_142521.pth
+训练曲线图保存在: ./log/train_20250519_142521/training_curves.png
