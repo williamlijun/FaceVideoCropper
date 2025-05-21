@@ -30,6 +30,11 @@
 - 模型下载请查看 ./notes/模型下载.md
 - 请着重查看 CMakeLists.txt 文件
 
+由于GitHub的上传大小限制，对于某些大型文件请在百度网盘获取：
+
+通过网盘分享的文件：FaceVideoCropper_大型文件
+链接: https://pan.baidu.com/s/1lrRAs8U3XGtRiIIzc0yprg?pwd=32bp 提取码: 32bp
+
 环境配置成功后即可编译源码，步骤如下（注意：请在项目根目录下执行）：
 
     mkdir build
@@ -82,125 +87,10 @@ FaceCropping
 
 # 效果展示
 
-输入：./data/黄渤_test.mp4
-
-    ./build/FaceVideoCropper ./data/黄渤_test.mp4 ./data/黄渤.png ./data/黄渤_output 0.4
-
-    成功设置相似度阈值为: 0.4
-    文件夹已存在: ./data/黄渤_output
-    视频文件: ./data/黄渤_test.mp4
-    -----------------------------------
-    帧率 (FPS): 30
-    帧尺寸 (宽度 x 高度): 636 x 360
-    编码格式 (FourCC): h264
-    总帧数: 2281
-    视频总时长: 1 分钟 16.03 秒
-    -----------------------------------
-    [ WARN:0@1.126] global matrix_expressions.cpp:1333 assign OpenCV/MatExpr: processing of multi-channel arrays might be changed in the future: https://github.com/opencv/opencv/issues/16739
-
-    ------------------- 耗时统计 -------------------
-    总处理帧数: 2281
-    总处理时间: 1350.719 秒
-    平均每帧处理时间: 0.592 秒
-
-    各模块耗时:
-    - 人脸检测总耗时: 237.470 秒
-        - 平均每帧耗时: 0.104 秒
-    - 目标跟踪总耗时: 0.016 秒
-        - 平均每帧耗时: 0.000 秒
-    - 人脸识别总耗时: 1098.259 秒
-        - 平均每帧耗时: 0.481 秒
-    ------------------------------------------------
-
-    开始剪辑包含目标人物的视频片段...
-    已保存片段: ./data/黄渤_output/clip_0.avi (帧 98 - 139)
-    已保存片段: ./data/黄渤_output/clip_1.avi (帧 176 - 178)
-    已保存片段: ./data/黄渤_output/clip_2.avi (帧 184 - 212)
-    已保存片段: ./data/黄渤_output/clip_3.avi (帧 216 - 216)
-    已保存片段: ./data/黄渤_output/clip_4.avi (帧 225 - 226)
-    已保存片段: ./data/黄渤_output/clip_5.avi (帧 229 - 231)
-    已保存片段: ./data/黄渤_output/clip_6.avi (帧 284 - 308)
-    已保存片段: ./data/黄渤_output/clip_7.avi (帧 310 - 313)
-    已保存片段: ./data/黄渤_output/clip_8.avi (帧 330 - 340)
-    已保存片段: ./data/黄渤_output/clip_9.avi (帧 385 - 441)
-    已保存片段: ./data/黄渤_output/clip_10.avi (帧 571 - 622)
-    已保存片段: ./data/黄渤_output/clip_11.avi (帧 862 - 868)
-    已保存片段: ./data/黄渤_output/clip_12.avi (帧 870 - 872)
-    已保存片段: ./data/黄渤_output/clip_13.avi (帧 874 - 876)
-    已保存片段: ./data/黄渤_output/clip_14.avi (帧 878 - 881)
-    已保存片段: ./data/黄渤_output/clip_15.avi (帧 889 - 898)
-    已保存片段: ./data/黄渤_output/clip_16.avi (帧 1024 - 1126)
-    已保存片段: ./data/黄渤_output/clip_17.avi (帧 1130 - 1179)
-    已保存片段: ./data/黄渤_output/clip_18.avi (帧 1475 - 1480)
-    已保存片段: ./data/黄渤_output/clip_19.avi (帧 1505 - 1597)
-    已保存片段: ./data/黄渤_output/clip_20.avi (帧 1658 - 1675)
-    已保存片段: ./data/黄渤_output/clip_21.avi (帧 1677 - 1698)
-    已保存片段: ./data/黄渤_output/clip_22.avi (帧 1704 - 1704)
-    已保存片段: ./data/黄渤_output/clip_23.avi (帧 1707 - 1727)
-    已保存片段: ./data/黄渤_output/clip_24.avi (帧 1731 - 1734)
-    已保存片段: ./data/黄渤_output/clip_25.avi (帧 1738 - 1751)
-    已保存片段: ./data/黄渤_output/clip_26.avi (帧 1753 - 1764)
-    已保存片段: ./data/黄渤_output/clip_27.avi (帧 1850 - 1919)
-    已保存片段: ./data/黄渤_output/clip_28.avi (帧 1933 - 1956)
-    已保存片段: ./data/黄渤_output/clip_29.avi (帧 1958 - 1969)
-    已保存片段: ./data/黄渤_output/clip_30.avi (帧 1971 - 1971)
-    已保存片段: ./data/黄渤_output/clip_31.avi (帧 1980 - 2002)
-    已保存片段: ./data/黄渤_output/clip_32.avi (帧 2008 - 2021)
-    已保存片段: ./data/黄渤_output/clip_33.avi (帧 2023 - 2023)
-    已保存片段: ./data/黄渤_output/clip_34.avi (帧 2090 - 2135)
-    已保存片段: ./data/黄渤_output/clip_35.avi (帧 2185 - 2198)
-    ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
-    built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
-    configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
-    libavutil      58. 29.100 / 58. 29.100
-    libavcodec     60. 31.102 / 60. 31.102
-    libavformat    60. 16.100 / 60. 16.100
-    libavdevice    60.  3.100 / 60.  3.100
-    libavfilter     9. 12.100 /  9. 12.100
-    libswscale      7.  5.100 /  7.  5.100
-    libswresample   4. 12.100 /  4. 12.100
-    libpostproc    57.  3.100 / 57.  3.100
-    Input #0, concat, from './data/黄渤_output/concat_list.txt':
-    Duration: N/A, start: 0.000000, bitrate: 5084 kb/s
-    Stream #0:0: Video: mjpeg (Baseline) (MJPG / 0x47504A4D), yuvj420p(pc, bt470bg/unknown/unknown), 636x360, 5084 kb/s, 30 fps, 30 tbr, 30 tbn
-    Output #0, avi, to './data/黄渤_output/target_clips.avi':
-    Metadata:
-        ISFT            : Lavf60.16.100
-    Stream #0:0: Video: mjpeg (Baseline) (MJPG / 0x47504A4D), yuvj420p(pc, bt470bg/unknown/unknown), 636x360, q=2-31, 5084 kb/s, 30 fps, 30 tbr, 30 tbn
-    Stream mapping:
-    Stream #0:0 -> #0:0 (copy)
-    Press [q] to stop, [?] for help
-    [out#0/avi @ 0x555db487bd00] video:18409kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.134753%
-    size=   18434kB time=00:00:26.80 bitrate=5634.7kbits/s speed= 322x    
-
-    已成功剪辑包含目标人物的视频并保存到: ./data/黄渤_output/target_clips.avi
-    目标 ROI 信息已保存到: ./data/黄渤_output/video_rois.txt
-    目标文件夹中已存在同名文件: ./data/黄渤_output/黄渤_test.mp4，跳过复制。
-    目标文件夹中已存在同名文件: ./data/黄渤_output/黄渤.png，跳过复制。
-
-    ./build/FaceCropping ./data/黄渤_output/target_clips.avi ./data/黄渤_output/video_rois.txt ./data/黄渤_output/face
-    
-    成功加载 805 个标注框信息。
-    共保存 805 张面部图像到 ./data/黄渤_output/face
-    面部裁剪完成。
-
-输出：./data/黄渤_output/
-
-[输入视频](data/黄渤_test.mp4){:target="input_video"}
-
-[输出视频](data/黄渤_output/output_tracked.avi)
-
-[剪切视频](data/黄渤_output/target_clips.avi)
-
-人脸剪切
-
-![图片alt](/data/HuangBo_output/face/face_000000.jpg)
-
-[rois文件](data/黄渤_output/video_rois.txt)
-
-有关详细数据请查看 /data/HuangBo_output 文件夹内容
+由于该项目的处理对象是视频，所以文件比较大无法上传，如需查看项目效果，请在之前在百度网盘（https://pan.baidu.com/s/1lrRAs8U3XGtRiIIzc0yprg?pwd=32bp 提取码: 32bp）中下载的大型文件中的data文件夹中查看
 
 # 声明
 
 该项目使用了 OpenFace 项目用于结构化数据提取。
+
 视频素材均为网络查找所得，若有侵权行为欢迎联系作者进行删除
